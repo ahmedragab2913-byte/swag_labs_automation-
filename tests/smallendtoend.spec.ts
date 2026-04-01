@@ -17,8 +17,7 @@ test.describe('End to End Tests', () => {
     // Step 4: Go to the cart
     await inventoryPage.goToCart();
     // Step 5: Assertion (Verify that items are added to the cart)
-    // For example, checking if the cart has the correct number of items
-    // You would need to implement a method in InventoryPage to get the cart item count or verify specific items   
+    
     await expect.soft(inventoryPage.CartButton).toHaveText('6'); // Example assertion, adjust as needed
   });
 });            
