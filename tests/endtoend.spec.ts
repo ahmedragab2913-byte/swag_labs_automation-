@@ -7,7 +7,7 @@ import { CheckoutStepTwoPage } from '../pages/checkout-step-two.spec';
 import { CheckoutCompletePage } from '../pages/checkout-complete.spec';
 test.describe('End to End Tests', () => {
 
-  test('User should complete full purchase flow', async ({ page }) => {
+  test('complete full purchase flow', async ({ page }) => {
   const loginPage = new LoginPage(page);
   const inventoryPage = new InventoryPage(page);
   const cartpage = new cartPage(page);
