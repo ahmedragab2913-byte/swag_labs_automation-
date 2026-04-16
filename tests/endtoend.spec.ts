@@ -1,10 +1,10 @@
 import { test, expect } from '@playwright/test';
-import { LoginPage } from '../pages/loginpage.spec'; // Ensure the path points to your POM file
-import { InventoryPage } from '../pages/inventory.spec';
-import { cartPage } from '../pages/cart.spec';
-import { CheckoutStepOnePage } from '../pages/checkout-step-one.spec';
-import { CheckoutStepTwoPage } from '../pages/checkout-step-two.spec';
-import { CheckoutCompletePage } from '../pages/checkout-complete.spec';
+import { LoginPage } from '../pages/loginpage'; // Ensure the path points to your POM file
+import { InventoryPage } from '../pages/inventory';
+import { cartPage } from '../pages/cart';
+import { CheckoutStepOnePage } from '../pages/checkout-step-one';
+import { CheckoutStepTwoPage } from '../pages/checkout-step-two';
+import { CheckoutCompletePage } from '../pages/checkout-complete';
 test.describe('End to End Tests', () => {
 
   test('complete full purchase flow', async ({ page }) => {
