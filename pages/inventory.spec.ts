@@ -43,7 +43,7 @@ export class InventoryPage {
         await this.AddtocartButton5.click();
         await this.AddtocartButton6.click();
     }
-    async goToCart(){
+    async goToCart() {
         await this.CartButton.click();
     }
     async goToTwitter(){

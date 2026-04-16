@@ -5,8 +5,7 @@ export class LoginPage {
     readonly usernameInput: Locator;
     readonly passwordInput: Locator;
     readonly loginButton: Locator;
-    readonly AddtocartButton1: Locator;
-    readonly AddtocartButton2: Locator;
+
     readonly errorMessage: Locator;
 
     constructor(page: Page) {
@@ -14,8 +13,6 @@ export class LoginPage {
         this.usernameInput = page.getByTestId('username');
         this.passwordInput = page.getByTestId('password');
         this.loginButton = page.getByTestId('login-button');
-        this.AddtocartButton1 = page.getByTestId('add-to-cart-sauce-labs-backpack');
-        this.AddtocartButton2 = page.getByTestId('add-to-cart-sauce-labs-bike-light');
         this.errorMessage = page.getByTestId('error');
     }
 
